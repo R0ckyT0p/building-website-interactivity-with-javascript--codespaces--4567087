@@ -490,6 +490,8 @@
 				<article id="post-2" class="post-2 page type-page status-publish hentry">
 					<div class="entry-content">
 <!-- end bbinclude -->
+
+<!-- John's Cusomization for Exercise. -->
 						<form class="exercise" id="frm-signup">
 							<div class="field-group">
 								<label for="txt-username">Username</label>
@@ -504,10 +506,14 @@
 							<div class="field-group">
 								<label for="txt-password-confirm">Confirm Password</label>
 								<input id="txt-password-confirm" type="password" class="field field--password" value="" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+								<button id="reveal-pwd" aria-controls="txt-password txt-password-confirm" data-label-show="Show Password" data-label-hide="Hide Password">
+									Show Password
+								</button>
+
 							</div>
 
 							<div class="actions">
-								<input type="submit" class="btn btn--login" value="Sign up">
+								<input id="btn-submit" type="submit" class="btn btn--login" value="Sign up">
 							</div>
 						</form>
 
