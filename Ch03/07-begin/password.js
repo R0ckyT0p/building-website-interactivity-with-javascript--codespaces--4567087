@@ -3,6 +3,11 @@
 window.addEventListener('DOMContentLoaded', () => {
     const myForm = document.querySelector('#frm-signup');
     const passwords = document.querySelectorAll('.field--password');
+    const msgRegion = document.querySelector('#messages');
+    const msgError = document.querySelector('.dialog--msg-error');
+    const msgSuccess = document.querySelector('.dialog--msg-success');
+
+    let delayTimer;
 
     // Step 1: Validate that the passwords match when the form is submitted.
     myForm.addEventListener('submit', evt => {
@@ -10,9 +15,17 @@ window.addEventListener('DOMContentLoaded', () => {
         evt.preventDefault();
 
         if (passwords[0].value !== passwords[1].value) {
-            alert('Your passwords must match.  Please double check and fix them.');
+            msgSuccess.close();
+            msgError.textContent = 'Passwords do not match.';
+            msgError.show();
         } else {
-            alert('Success!');
+            msgError.close();
+            const delay = parseInt(msgSuccess.dataset.closeDelay, 10);
+            msgSuccess.textContent = 'Passwords match!';
+            msgSuccess.show();
+            delayTimer = setTimeout(() => {
+                msgSuccess.close();
+            }, delay * 1000);
         }
     });
 

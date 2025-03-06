@@ -1,0 +1,41 @@
+/* Add a valid CSS rule */
+
+.dialog--msg {
+  background-color: hsl(0, 0%, 100%);
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+.dialog--msg-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
+.dialog--msg-error-header {
+  background-color: #f5c6cb;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+.dialog--msg-error-content {
+  padding: 10px;
+}
+.dialog--msg-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
+.dialog--msg-success-header {
+  background-color: #c3e6cb;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+.dialog--msg-success-content {
+  padding: 10px;
+}

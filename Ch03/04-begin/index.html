@@ -23,10 +23,10 @@
         <p>Landon Rooftop Caf&eacute; is the destination for five star dining. Our master chefs are trained to meet special dietary needs, and we offer a range of vegetarian/vegan, kosher, gluten, and dairy free selections to accommodate our guests. Whether you&rsquo;re in the mood for our award winning roast beef, fresh select salads, appetizing lunch entrees, or delectable desserts, we have you covered.</p>
 
         <p>
-          <button id="btn-chef-g">Read about Chef Girado</button>
+          <button class="btn--dialog-open">Read about Chef Girado</button>
         </p>
 
-        <dialog id="dlg-chef-g" aria-labelledby="header-chef-g" aria-describedby="content-chef-g">
+        <dialog class="dialog--chef" aria-labelledby="header-chef-g" aria-describedby="content-chef-g">
           <button autofocus aria-label="Close the dialog" class="btn--dialog-close">𝗫</button>
           <h2 class="dialog--header" id="header-chef-g">Chef Girado</h2>
           <div class="dialog--content" id="content-chef-g">
@@ -43,20 +43,18 @@
         <p>The Rooftop Smoothie Bar gives you panoramic views of the city, where you can have one of our specialty smoothies while you wait for your table. Our top mixologists are constantly bringing new and unique offerings to our smoothie menu. We have a wide range of locally grown, fresh fruit and vegetable choices to make you custom blended drinks.  We also have seasonal selections that you won’t find anywhere else.</p>
 
         <p>
-          <button id="btn-chef-s">Read about Chef Stiles</button>
+          <button class="btn--dialog-open">Read about Chef Stiles</button>
         </p>
 
-        <div class="modal-dialog-backdrop">
-          <div class="modal-dialog" role="dialog" aria-labelledby="header-stiles">
-            <h3 id="header-stiles">Chef Stiles</h3>
-
-            <p>A world-renowned smoothie mixologist, Chef Stiles, is never too far from a Vitamix.</p>
-
-            <p style="text-align: right;">
-              <button id="btn-chef-s-close">Close</button>
+        <dialog class="dialog--chef" aria-labelledby="header-chef-s" aria-describedby="content-chef-s">
+          <button autofocus aria-label="Close the dialog" class="btn--dialog-close">𝗫</button>
+          <h2 class="dialog--header" id="header-chef-s">Chef Stiles</h2>
+          <div class="dialog--content" id="content-chef-s">
+            <p>
+              A world-renowned smoothie mixologist, Chef Stiles, is never too far from a Vitamix.
             </p>
           </div>
-        </div>
+        </dialog>
       </section>
 
       <section id="coffeebar">
@@ -64,11 +62,19 @@
         <img src="../../landonhotel.com/images/hotel/dining_lattes.jpg" alt="Dining">
         <p>Our traditional breakfast and coffee bar, located adjacent to our lounge, are the perfect way to start your morning. We offer a wide selection of seasonal fresh fruit, a variety of cereals, croissants, crusty sourdough bread, cook-to-order eggs and omelettes, fresh juice, coffee, and teas. Breakfast is served from 7:00 am to 10:00 am daily. Our coffee bar is open until 6:30 pm daily.</p>
 
-        <h3>Chef Eggleston</h3>
-
         <p>
-          Chef Eggleston, contrary to popular belief, doesn't eat a lot of eggs.
+          <button class="btn--dialog-open">Read about Chef Eggleston</button>
         </p>
+                
+        <dialog class="dialog--chef" aria-labelledby="header-chef-e" aria-describedby="content-chef-e">
+          <button autofocus aria-label="Close the dialog" class="btn--dialog-close">𝗫</button>
+          <h2 class="dialog--header" id="header-chef-e">Chef Eggleston</h2>
+          <div class="dialog--content" id="content-chef-e">
+            <p>
+              Chef Eggleston, contrary to popular belief, doesn't eat a lot of eggs.
+            </p>
+          </div>
+        </dialog>
       </section>
     </article><!-- inhotel -->
     <article id="roomservice">

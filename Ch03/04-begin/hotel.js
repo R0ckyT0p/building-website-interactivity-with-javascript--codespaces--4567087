@@ -1,19 +1,30 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
-  const btnGirado = document.querySelector('#btn-chef-g');
-  const dialogGirardo = document.querySelector('#dlg-chef-g');
-  const btnClose = document.querySelector('.btn--dialog-close');
+  const inHotelSection = document.querySelector('#inhotel');
 
-  btnGirado.addEventListener('click', (evt) => {
-    evt.preventDefault();
+  inHotelSection.addEventListener('click', (evt) => {
+    const target = evt.target;
 
-    dialogGirardo.showModal();
-  });
+    if (target.classList.contains('btn--dialog-open')) {
+      evt.preventDefault();
 
-  btnClose.addEventListener('click', (evt) => {
-    evt.preventDefault();
+      let myDlg = target.parentNode.querySelector('.dialog--chef');
 
-    dialogGirardo.close();
+      if (!myDlg) {
+        myDlg = target.parentNode.parentNode.querySelector('.dialog--chef');
+      } 
+      if (myDlg) {
+        myDlg.showModal();
+      }
+    }else if (target.classList.contains('btn--dialog-close')) {
+      evt.preventDefault();
+
+      const myDlg = target.closest('dialog');
+
+      if ('close' in myDlg) {
+        myDlg.close();
+      }
+    }
   });
 });

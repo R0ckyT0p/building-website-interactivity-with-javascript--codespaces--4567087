@@ -26,15 +26,20 @@
           <button id="btn-chef-g">Read about Chef Girado</button>
         </p>
 
-        <div id="info-chef-g">
-          <h3>
+        <dialog id="dlg-chef-g" aria-labelledby="header-chef-g" aria-describedby="content-chef-g">
+          <!-- <form method="dialog">
+            <button>Close</button>
+          </form> -->
+          <h2 class="dialog--header" id="header-chef-g">
             Chef Girado
-          </h3>
-
-          <p>
-            Chef Girado trained in Paris and has a degree in cuisinology from Tufts.
-          </p>
-        </div>
+          </h2>
+          <div class="dialog--content" id="content-chef-g">
+            <p>
+              Chef Girado trained in Paris and has a degree in cuisinology from Tufts.
+            </p>
+          </div>
+          <button autofocus aria-label="Close the dialog" class="btn--dialog-close">X</button>
+        </dialog>
       </section>
 
       <section id="smoothiebar">
